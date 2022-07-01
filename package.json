@@ -1,0 +1,38 @@
+{
+  "name": "cordova-keyvaluestorage",
+  "version": "1.0.0",
+  "description": "This package allows you to easily save data in a key-value manner in cordova",
+  "keywords": [
+    "key value storage",
+    "key value store ",
+    "key value",
+    "web",
+    "app",
+    "android",
+    "ios",
+    "desktop",
+    "frontle",
+    "cordova",
+    "electron",
+    "chrome extension"
+  ],
+  "author": "Yoon HyungJun <y37653@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Artifriends-inc/cordova-KeyValueStorage.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Artifriends-inc/cordova-KeyValueStorage/issues"
+  },
+  "homepage": "https://github.com/Artifriends-inc/cordova-KeyValueStorage#readme",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "cordovaKeyValueStorage.js"
+  ],
+  "dependencies": {
+    "cordova-fileutil": "1.0.2",
+    "cordova-getplatformid": "1.0.1"
+  }
+}
