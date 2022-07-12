@@ -38,6 +38,8 @@ $ frontle install cordova-keyvaluestorage
 
 
 
+**How to install from Web**
+
 For typical web projects, copy and use the code at cordovaKeyValueStorage.js, getPlatformId.js, cordovaFileUtil.js in below repositorys
 
 https://github.com/Artifriends-inc/cordova-KeyValueStorage (cordovaKeyValueStorage.js)
