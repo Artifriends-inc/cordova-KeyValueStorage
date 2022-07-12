@@ -1,8 +1,6 @@
-# cordova-FileUtil
+# cordova-KeyValueStorage
 
 This package allows you to easily save data in a key-value manner in cordova
-
-
 
 [![NPM Version][npm-version-image]][npm-url]
 
@@ -11,7 +9,10 @@ This package allows you to easily save data in a key-value manner in cordova
 [![NPM Downloads][npm-downloads-image]][npm-downloads-url]
 
 ```javascript
-// get storage instance
+import {CordovaKeyValueStorage} from "../../frontle/browser_modules/cordova-keyvaluestorage/cordovaKeyValueStorage.js";
+
+
+// get instance
 const cordovaKeyValueStorage = CordovaKeyValueStorage.getInstance();
 
 // load storage
@@ -29,7 +30,15 @@ console.log(result); // 123
 
 ## Installation
 
-For typical cordova projects, copy and use the code at cordovaKeyValueStorage.js, getPlatformId.js, cordovaFileUtil.js in below repositorys
+**How to install from Frontle**
+
+```shell
+$ frontle install cordova-keyvaluestorage
+```
+
+
+
+For typical web projects, copy and use the code at cordovaKeyValueStorage.js, getPlatformId.js, cordovaFileUtil.js in below repositorys
 
 https://github.com/Artifriends-inc/cordova-KeyValueStorage (cordovaKeyValueStorage.js)
 
@@ -39,23 +48,14 @@ https://github.com/Artifriends-inc/cordova-FileUtil (cordovaFileUtil.js)
 
 
 
-How to install with Frontle
-
-```shell
-$ frontle install-original cordova-keyvaluestorage
-```
-
-
-
 ## Function
 
 #### getInstance()
 
-Get "CordovaKeyValueStorage" object
-
-Only one object is created using a single-tone pattern
+Get "CordovaKeyValueStorage" object. only one object is created using a single-tone pattern
 
 ```javascript
+// get instance
 const cordovaKeyValueStorage = CordovaKeyValueStorage.getInstance();
 ```
 
@@ -97,7 +97,7 @@ console.log(result); // 123
 
 ## People
 
-The original author of cordova-fileutil is [MushStory](https://github.com/MushStory)
+The original author of cordova-keyvaluestorage is [MushStory](https://github.com/MushStory)
 
 
 
