@@ -1,7 +1,7 @@
 'use strict';
 
-import {GetPlatformId} from "./cordova-getplatformid/getPlatformId.js";
-import {CordovaFileUtil} from "./cordova-fileutil/cordovaFileUtil.js";
+import {GetPlatformId} from "./util/getPlatformId.js";
+import {CordovaFileUtil} from "./util/cordovaFileUtil.js";
 
 export class CordovaKeyValueStorage {
     static _instance = null;
