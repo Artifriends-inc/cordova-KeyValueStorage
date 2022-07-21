@@ -13,7 +13,7 @@ import {CordovaKeyValueStorage} from "../../frontle/browser_modules/cordova-keyv
 
 
 // get instance
-const cordovaKeyValueStorage = CordovaKeyValueStorage.getInstance();
+const cordovaKeyValueStorage = new CordovaKeyValueStorage();
 
 // load storage
 await cordovaKeyValueStorage.load();
@@ -52,13 +52,13 @@ https://github.com/Artifriends-inc/cordova-FileUtil (cordovaFileUtil.js)
 
 ## Function
 
-#### getInstance()
+#### new CordovaKeyValueStorage()
 
 Get "CordovaKeyValueStorage" object. only one object is created using a single-tone pattern
 
 ```javascript
 // get instance
-const cordovaKeyValueStorage = CordovaKeyValueStorage.getInstance();
+const cordovaKeyValueStorage = new CordovaKeyValueStorage();
 ```
 
 

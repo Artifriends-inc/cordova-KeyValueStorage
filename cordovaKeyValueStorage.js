@@ -4,15 +4,15 @@ import {GetPlatformId} from "../cordova-getplatformid/getPlatformId.js";
 import {CordovaFileUtil} from "../cordova-fileutil/cordovaFileUtil.js";
 
 export class CordovaKeyValueStorage {
-    static instance = null;
-    static getInstance() {
-        if (this.instance === null) this.instance = new this();
-        return this.instance;
+    static _instance = null;
+    constructor() {
+        if (CordovaKeyValueStorage._instance) return CordovaKeyValueStorage._instance;
+        CordovaKeyValueStorage._instance = this;
     }
 
     dir = null;
     platformId = '';
-    cordovaFileUtil = CordovaFileUtil.getInstance();
+    cordovaFileUtil = new CordovaFileUtil();
 
     async load() {
         this.platformId = GetPlatformId.getId();
