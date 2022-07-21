@@ -9,7 +9,7 @@ This package allows you to easily save data in a key-value manner in cordova
 [![NPM Downloads][npm-downloads-image]][npm-downloads-url]
 
 ```javascript
-import {CordovaKeyValueStorage} from "../../frontle/browser_modules/cordova-keyvaluestorage/cordovaKeyValueStorage.js";
+import {CordovaKeyValueStorage} from "../../browser_modules/cordova-keyvaluestorage/cordovaKeyValueStorage.js";
 
 
 // get instance
@@ -40,13 +40,9 @@ $ frontle install cordova-keyvaluestorage
 
 **How to install from Web**
 
-For typical web projects, copy and use the code at cordovaKeyValueStorage.js, getPlatformId.js, cordovaFileUtil.js in below repositorys
+For typical web projects, copy and use the below repository
 
-https://github.com/Artifriends-inc/cordova-KeyValueStorage (cordovaKeyValueStorage.js)
-
-https://github.com/Artifriends-inc/cordova-getPlatformId (getPlatformId.js)
-
-https://github.com/Artifriends-inc/cordova-FileUtil (cordovaFileUtil.js)
+https://github.com/Artifriends-inc/cordova-KeyValueStorage
 
 
 
