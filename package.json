@@ -29,8 +29,8 @@
   "files": [
     "LICENSE",
     "README.md",
-    "cordova-FileUtil/",
-    "cordova-getPlatformId/",
+    "cordova-fileutil/",
+    "cordova-getplatformid/",
     "cordovaKeyValueStorage.js"
   ],
   "dependencies": {}
