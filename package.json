@@ -1,6 +1,6 @@
 {
   "name": "cordova-keyvaluestorage",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "This package allows you to easily save data in a key-value manner in cordova",
   "keywords": [
     "key value storage",

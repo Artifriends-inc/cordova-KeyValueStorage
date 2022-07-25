@@ -18,6 +18,10 @@ const cordovaKeyValueStorage = new CordovaKeyValueStorage();
 // load storage
 await cordovaKeyValueStorage.load();
 
+// get storage directory entry
+const storageDirEntry = await cordovaKeyValueStorage.getStorageDirEntry();
+console.log(storageDirEntry);
+
 // save data
 await cordovaKeyValueStorage.setItem('test', '123');
 
@@ -59,7 +63,7 @@ const cordovaKeyValueStorage = new CordovaKeyValueStorage();
 
 
 
-#### load()
+#### load(storageFolderName = 'cordovaKeyValueStorage')
 
 Load storage, You must run this function before you can use any of the other functions
 
@@ -70,7 +74,19 @@ cordovaKeyValueStorage.load();
 
 
 
-#### setItem(key, value)
+#### getStorageDirEntry()
+
+Get Storage directory entry
+
+```javascript
+// get storage directory entry
+const storageDirEntry = await cordovaKeyValueStorage.getStorageDirEntry();
+console.log(storageDirEntry);
+```
+
+
+
+#### setItem(key, value, fileName = key)
 
 Save Value
 
@@ -81,7 +97,7 @@ cordovaKeyValueStorage.setItem('test', '123');
 
 
 
-#### getItem(key)
+#### getItem(key, fileName = key)
 
 Get Value
 
